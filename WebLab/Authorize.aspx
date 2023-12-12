@@ -1,36 +1,31 @@
-﻿<%@ Page Title="Регистрация" MasterPageFile="~/Site.Master"  Language="C#" AutoEventWireup="true" CodeBehind="Authorize.aspx.cs" Inherits="WebLab.Authorize" %>
+﻿<%@ Page Title="Авторизация" MasterPageFile="~/Site.Master"  Language="C#" AutoEventWireup="true" CodeBehind="Authorize.aspx.cs" Inherits="WebLab.Authorize" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <h2><%: Title %></h2>
         <table>
         <tr>
             <td>
-                Login:
+                Логин:
             </td>
             <td>
-                <asp:TextBox ID="TbLogin" Width="500px" runat="server" />
+                <asp:TextBox ID="TbLogin" Width="500px" placeholder="Введите логин" runat="server" />
             </td>
         </tr>
         <tr>
             <td>
-                Имя:
+                Пароль:
             </td>
             <td>
-                <asp:TextBox ID="TbName" Width="500px" runat="server" />
+                <div>
+                    <input id="TbPassword" style="width:500px" type="password" placeholder="Введите пароль" runat="server" />
+                </div>
             </td>
         </tr>
         <tr>
-            <td>
-                Возраст:
+            <td colspan="1" style="text-align:left;">
+                <asp:HyperLink ID="HyperLink1" runat="server"><a class="lll" runat ="server" href="../Register">Создать аккаунт </a></asp:HyperLink>
             </td>
-            <td>
-                <asp:TextBox ID="TbAge" Width="500px" runat="server" />
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align:center;">
-                <asp:HyperLink ID="HyperLink1" runat="server"><a class="lll" runat ="server" href="../Autorize"> У меня уже есть аккаунт </a></asp:HyperLink>
-            </td>
-            <td colspan="2" style="text-align:center;">
+            <td colspan="2" style="text-align:right;">
                 <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClientClick="BtnSave_Click" />
             </td>
         </tr>    

@@ -24,22 +24,13 @@ namespace WebLab
         protected global::System.Web.UI.WebControls.TextBox TbLogin;
 
         /// <summary>
-        /// TbName элемент управления.
+        /// TbPassword элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически созданное поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbName;
-
-        /// <summary>
-        /// TbAge элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbAge;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword TbPassword;
 
         /// <summary>
         /// HyperLink1 элемент управления.

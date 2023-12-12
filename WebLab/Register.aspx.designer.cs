@@ -42,6 +42,24 @@ namespace WebLab
         protected global::System.Web.UI.WebControls.TextBox TbAge;
 
         /// <summary>
+        /// Password1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password1;
+
+        /// <summary>
+        /// Password2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword Password2;
+
+        /// <summary>
         /// HyperLink1 элемент управления.
         /// </summary>
         /// <remarks>

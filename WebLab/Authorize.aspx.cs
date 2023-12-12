@@ -13,5 +13,10 @@ namespace WebLab
         {
 
         }
+
+        protected void PasswordChecked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
