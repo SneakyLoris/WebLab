@@ -15,18 +15,22 @@ namespace WebLab
         }
         protected void BtnSave_Click(object sender, EventArgs e)
         {
-            /*User u = new User()
+            User user = new User();
+            if (Page.IsValid)
             {
-                Id = 0,
-                Login = TbLogin.Text,
-                Name = TbName.Text,
-                Age = int.Parse(TbAge.Text)
-            };
-            using (UserContext db = new UserContext())
-            {
-                db.Users.Add(u);
-                db.SaveChanges();
-            }*/
+                user.Id = 0;
+                user.Login = TbLogin.Text;
+                user.Password = TPassword.Text;
+                user.Name = TbName.Text;
+                user.Age = int.Parse(TbAge.Text);
+
+                using (UserContext db = new UserContext())
+                {
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                }
+            }
+            
         }
     }
 }

@@ -33,18 +33,29 @@
             </td>
             <td>
                 <div>
-                    <input id="Password1" style="width:500px" type="password" placeholder="Введите пароль" runat="server" />
+                    <asp:TextBox ID="TPassword" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
-        </tr><tr>
+        <tr>
             <td>
                 Подтвердить пароль:
             </td>
             <td>
                 <div>
-                    <input id="Password2" style="width:500px" type="password" placeholder="Подтвердить пароль" runat="server" />
+                    <asp:TextBox ID="TPasswordCheck" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
+            <asp:CompareValidator  
+                ID="PasswordValidtor" 
+                ControlToValidate="TPassword" 
+                ControlToCompare="TPasswordCheck"
+                EnableClientScript="False" 
+                operator = "Equal"
+                Type="String" 
+                runat="server" 
+                ErrorMessage="Пароли не совпадают">
+            </asp:CompareValidator>
+
         </tr>
         <tr>
             <td colspan="1" style="text-align:left;">
