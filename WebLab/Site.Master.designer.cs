@@ -15,6 +15,33 @@ namespace WebLab
     {
 
         /// <summary>
+        /// Greeting элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Greeting;
+
+        /// <summary>
+        /// aExit элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor aExit;
+
+        /// <summary>
+        /// aReg элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor aReg;
+
+        /// <summary>
         /// MainContent элемент управления.
         /// </summary>
         /// <remarks>

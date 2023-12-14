@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
+    <main>
         <table>
         <tr>
             <td>
@@ -26,7 +27,7 @@
                 <asp:HyperLink ID="HyperLink1" runat="server"><a class="lll" runat ="server" href="../Register">Создать аккаунт </a></asp:HyperLink>
             </td>
             <td colspan="2" style="text-align:right;">
-                <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClientClick="BtnSave_Click" />
+                <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClick="PasswordChecked" />
             </td>
         </tr>    
     </table>

@@ -29,6 +29,9 @@ namespace WebLab
                     db.Users.Add(user);
                     db.SaveChanges();
                 }
+
+                Session["Name"] = TbName.Text;
+                ((SiteMaster)Master).Name = TbName.Text;
             }
             
         }

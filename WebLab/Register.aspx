@@ -62,7 +62,7 @@
                 <asp:HyperLink ID="HyperLink1" runat="server"><a runat="server" href="~/Authorize">У меня уже есть аккаунт</a></asp:HyperLink>
             </td>
             <td colspan="2" style="text-align:right;">
-                <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClientClick="BtnSave_Click" />
+                <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClick="BtnSave_Click"/>
             </td>
         </tr>    
     </table>

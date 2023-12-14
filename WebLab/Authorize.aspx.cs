@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace WebLab
 {
@@ -13,10 +14,25 @@ namespace WebLab
         {
 
         }
-
+        // не хватает перехода на главную странкицу
         protected void PasswordChecked(object sender, EventArgs e)
         {
+            if(Page.IsValid)
+            {
+                using (UserContext db = new UserContext())
+                {
+                    List<User> users = db.Users.ToList();
+                    foreach (User user in users)
+                    {
+                        if(user.Login == TbLogin.Text) // Пока без проверки пароля
+                        {
+                            Session["Name"] = user.Name;
+                            ((SiteMaster)Master).Name = user.Name;
+                        }
+                    }
+                }
 
+            }
         }
     }
 }

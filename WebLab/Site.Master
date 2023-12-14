@@ -47,14 +47,13 @@
                 </button>
                 <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Домашняя страница</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">Информация</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Связаться с нами</a></li>
                     </ul>
                 </div>
-                <div>
-                    <a class="reg-link" runat="server" href="~/Register">Присоединьться к нам</a>
-                </div>
+                <div style="margin: 0 20px; color:aqua;" runat="server" id="Greeting"></div>
+                <a href="?exit=1" runat="server" visible="false" id="aExit">Выход</a>
+                <a id="aReg" runat="server" visible="true" href="~/Register">Присоединьться к нам</a>
             </div>
         </nav>
         <div class="container body-content">
