@@ -10,7 +10,7 @@ namespace WebLab
     {
         // DESKTOP-V4RVBT2
         // localhost\\SQLEXPRESS
-        public UserContext() : base("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Users161;Integrated Security=True;Connect Timeout=30;Encrypt=False;")
+        public UserContext() : base("Data Source=DESKTOP-V4RVBT2;Initial Catalog=Users161;Integrated Security=True;Connect Timeout=30;Encrypt=False;")
         { }
         public DbSet<User> Users { get; set; }
     }

@@ -33,7 +33,7 @@
             </td>
             <td>
                 <div>
-                    <asp:TextBox ID="TPassword" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TPassword" style="width:500px" placeholder="Введите пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
         <tr>
@@ -42,7 +42,7 @@
             </td>
             <td>
                 <div>
-                    <asp:TextBox ID="TPasswordCheck" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TPasswordCheck" style="width:500px" placeholder="Подтвердите пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
             <asp:CompareValidator  

@@ -32,6 +32,8 @@ namespace WebLab
 
                 Session["Name"] = TbName.Text;
                 ((SiteMaster)Master).Name = TbName.Text;
+
+                Response.Redirect("~/");
             }
             
         }

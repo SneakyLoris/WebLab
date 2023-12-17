@@ -4,14 +4,13 @@
 
     <main>
         <section class="row" aria-labelledby="aspnetTitle">
-            <h1 id="aspnetTitle">ASP.NET</h1>
-            <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-            <p><a href="http://www.asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+            <h2 id="aspnetTitle">Новостные новости</h2>
+            <p class="lead">Читайте посты, которые сами пишите.</p>
         </section>
 
         <div class="row">
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
+                <h3 id="gettingStartedTitle">Getting started</h3>
                 <p>
                     ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
                 A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
@@ -38,7 +37,7 @@
                     <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
                 </p>
             </section>
-        </div>
+        </div>  
         <div>
             <table style="border: 1px solid blue;">
         <asp:DataList ID="DataList1" runat="server">
@@ -76,8 +75,8 @@
             </ItemTemplate>
         </asp:DataList>
                 <div>
-                    <asp:Button ID="AddBut" runat="server" Text="Button" Visible="false" />
-                    <asp:Button ID="DelBut" runat="server" Text="Button" Visible="False" />
+                    <asp:Button ID="AddBut" runat="server" href="~/CreatePost" Text="Добавить запись" Visible="false" />
+                    <asp:Button ID="DelBut" runat="server" Text="Удалить запись" Visible="False" />
                 </div>
     </table>
         </div>

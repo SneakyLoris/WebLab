@@ -19,3 +19,9 @@ textarea {
         padding: 0;
     }
 }
+
+icon-cs {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+}

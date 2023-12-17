@@ -17,6 +17,8 @@ namespace WebLab
                 lst = db.Users.Where(u => u.Age >= 18).ToList();
                 ReorderAndBind();
             }
+            AddBut.Visible = Session["Name"] != null && Session["Name"].ToString().Trim().Length > 0;
+            DelBut.Visible = Session["Name"] != null && Session["Name"].ToString().Trim().Length > 0;
         }
 
         private void ReorderAndBind()

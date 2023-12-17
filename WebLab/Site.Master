@@ -40,6 +40,7 @@
 
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
             <div class="container">
+                <asp:Image ID="Image1" runat="server" ImageUrl="https://memozg.ru/img/posts/4241_64cfe73922660.webp" Height="70" Width="70" style="border-radius: 80px; margin-right:20px;" class="icon-cs" />
                 <a class="navbar-brand" runat="server" href="~/">Новостные котики</a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Переключить навигацию" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">

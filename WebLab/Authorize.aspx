@@ -27,7 +27,7 @@
                 <asp:HyperLink ID="HyperLink1" runat="server"><a class="lll" runat ="server" href="../Register">Создать аккаунт </a></asp:HyperLink>
             </td>
             <td colspan="2" style="text-align:right;">
-                <asp:Button ID="BtnSave" Text="Сохранить" runat="server" OnClick="PasswordChecked" />
+                <asp:Button ID="BtnSave" Text="Войти" runat="server" OnClick="PasswordChecked" />
             </td>
         </tr>    
     </table>
