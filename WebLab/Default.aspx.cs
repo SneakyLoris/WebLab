@@ -9,43 +9,26 @@ namespace WebLab
 {
     public partial class _Default : Page
     {
-        List<User> lst = null;
+        // TODO
+        /*         сделать кнопки для создания, удаления поста только для авторизованных пользователей
+         *         Сделать так чтобы это все работало на главной странице ✔
+         *         сдеать форму для создания постов ✔
+         *         radiobutton and combobox ✔
+         *         в этой форму сделать проверку ошибок итд 
+         *         добавить куки не куки (ViewState,  Query String,  Cookies,  Session State,  Application State.) 
+         */
+        List<Post> lst = null;
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (UserContext db = new UserContext())
+            using (PostContext db = new PostContext())
             {
-                lst = db.Users.Where(u => u.Age >= 18).ToList();
+                lst = db.Posts.ToList();
                 ReorderAndBind();
             }
         }
 
         private void ReorderAndBind()
         {
-            var fld = Request.QueryString["fld"];
-            if (fld == null) fld = "id";
-            switch (fld)
-            {
-                case "id":
-                    {
-                        lst = lst.OrderBy(u => u.Id).ToList();
-                        break;
-                    }
-                case "name":
-                    {
-                        lst = lst.OrderBy(u => u.Name).ToList();
-                        break;
-                    }
-                case "login":
-                    {
-                        lst = lst.OrderBy(u => u.Login).ToList();
-                        break;
-                    }
-                case "age":
-                    {
-                        lst = lst.OrderBy(u => u.Age).ToList();
-                        break;
-                    }
-            }
             DataList1.DataSource = lst;
             DataList1.DataBind();
         }

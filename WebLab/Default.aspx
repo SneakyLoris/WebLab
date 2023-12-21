@@ -20,10 +20,12 @@
                 </p>
             </section>
             <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-                <h2 id="gettingStartedTitle">Getting started</h2>
+                <div>
+                    <asp:Label ID="LblId" runat="server" Text='<%# Eval("Title") %>' />
+                </div>
+                
                 <p>
-                    ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-                A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                    <%# Eval("Text") %>
                 </p>
                 <p>
                     <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
@@ -55,14 +57,9 @@
                         <asp:Label ID="LblId" runat="server" Text='<%# Eval("Id") %>' />
                     </td>
                     <td style="border:1px dashed blue;">
-                        <asp:Label ID="LblLogin" runat="server" Text='<%# Eval("Login") %>' />
+                        <asp:Label ID="LblLogin" runat="server" Text='<%# Eval("Title") %>' />
                     </td>
-                    <td style="border:1px dashed blue;">
-                        <asp:Label ID="LblName" runat="server" Text='<%# Eval("Name") %>' />
-                    </td>
-                    <td style="border:1px dashed blue;">
-                        <asp:Label ID="LblAge" runat="server" Text='<%# Eval("Age") %>' />
-                    </td>
+
                 </tr>
             </ItemTemplate>
         </asp:DataList>

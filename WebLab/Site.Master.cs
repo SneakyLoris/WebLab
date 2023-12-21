@@ -18,6 +18,7 @@ namespace WebLab
                 Greeting.InnerText = value.Trim();
                 aExit.Visible = Greeting.InnerText.Trim() != "";
                 aReg.Visible = !aExit.Visible;
+                createlink.Visible = aExit.Visible;
             }
         }
 
@@ -26,6 +27,7 @@ namespace WebLab
             if (Request.QueryString["exit"] == "1")
             {
                 Session["Name"] = null;
+                Session["Id"] = null;
             }
             if (Session["Name"] != null && Session["Name"].ToString().Trim().Length > 0)
             {

@@ -15,6 +15,15 @@ namespace WebLab
     {
 
         /// <summary>
+        /// LblId элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblId;
+
+        /// <summary>
         /// DataList1 элемент управления.
         /// </summary>
         /// <remarks>

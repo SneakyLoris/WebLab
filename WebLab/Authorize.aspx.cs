@@ -27,6 +27,7 @@ namespace WebLab
                         if(user.Login == TbLogin.Text && user.Password == TbPassword.Text) // Пока без проверки пароля
                         {
                             Session["Name"] = user.Name;
+                            Session["Id"] = user.Id;
                             ((SiteMaster)Master).Name = user.Name;
                             Response.Redirect("~/");
                         }

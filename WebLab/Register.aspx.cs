@@ -32,6 +32,7 @@ namespace WebLab
                 }
 
                 Session["Name"] = TbName.Text;
+                Session["Id"] = user.Id; // Косячное место, уточнить как исправить
                 ((SiteMaster)Master).Name = TbName.Text;
                 Response.Redirect("~/");
             }
