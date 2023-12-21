@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.FriendlyUrls;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -32,6 +33,7 @@ namespace WebLab
 
                 Session["Name"] = TbName.Text;
                 ((SiteMaster)Master).Name = TbName.Text;
+                Response.Redirect("~/");
             }
             
         }

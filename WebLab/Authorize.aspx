@@ -3,6 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %></h2>
     <main>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TbPassword" Width="150" Text="Введите пароль"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TbLogin" Text="Введите логин" Width="150"></asp:RequiredFieldValidator>
+
         <table>
         <tr>
             <td>
@@ -18,7 +21,7 @@
             </td>
             <td>
                 <div>
-                    <input id="TbPassword" style="width:500px" type="password" placeholder="Введите пароль" runat="server" />
+                    <asp:TextBox ID="TbPassword" Width="500px" type="password" placeholder="Введите пароль" runat="server" />
                 </div>
             </td>
         </tr>
@@ -31,6 +34,7 @@
             </td>
         </tr>    
     </table>
+                    
     </main>
 </asp:Content>
 

@@ -36,7 +36,7 @@
                     <asp:TextBox ID="TPassword" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
-        <tr>
+        <tr width="0">
             <td>
                 Подтвердить пароль:
             </td>
@@ -45,6 +45,10 @@
                     <asp:TextBox ID="TPasswordCheck" style="width:500px" placeholder="Подтвердить пароль" TextMode="Password" runat="server"></asp:TextBox>
                 </div>
             </td>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TPassword" Text="Введите пароль" Width="150"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TbLogin" Text="Введите логин" Width="150"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator" ControlToValidate="TbName" Text="Введите имя пользователя" Width="150"></asp:RequiredFieldValidator>
+
             <asp:CompareValidator  
                 ID="PasswordValidtor" 
                 ControlToValidate="TPassword" 

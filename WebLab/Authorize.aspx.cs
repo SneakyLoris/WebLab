@@ -24,10 +24,11 @@ namespace WebLab
                     List<User> users = db.Users.ToList();
                     foreach (User user in users)
                     {
-                        if(user.Login == TbLogin.Text) // Пока без проверки пароля
+                        if(user.Login == TbLogin.Text && user.Password == TbPassword.Text) // Пока без проверки пароля
                         {
                             Session["Name"] = user.Name;
                             ((SiteMaster)Master).Name = user.Name;
+                            Response.Redirect("~/");
                         }
                     }
                 }

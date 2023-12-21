@@ -9,7 +9,7 @@ namespace WebLab
     {
         public int Id { get; set; }
         public string Login { get; set; }
-        internal string Password { get; set; }
+        public string Password { get; set; }
         public string Name { get; set; }
         public int Age { get; set; }
     }
